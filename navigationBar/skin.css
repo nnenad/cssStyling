@@ -1,0 +1,421 @@
+/***********************************************************************/
+/*******************************************
+Menu
+*******************************************/
+/*********************************
+*Previous next exit small arrows
+*********************************/
+/********************************************/
+/*      Choose language page                */
+/********************************************/
+#main-region.language-selection {
+  position: relative;
+}
+/* Background image */
+#language-selection-background {
+  position: absolute;
+  display: inline-block;
+  background: url("data.png") no-repeat -0px -552px;
+  height: 272px;
+  width: 628px;
+  left: 160px;
+  top: 80px;
+  z-index: 1;
+}
+/* Language buttons */
+#language-selection-buttons {
+  position: absolute;
+  display: inline-block;
+  background: none;
+  z-index: 100;
+  height: 180px;
+  width: 140px;
+  left: 422px;
+  top: 188px;
+}
+#language-selection-buttons ul.btn-language {
+  text-align: left;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 120px;
+}
+#language-selection-buttons ul.btn-language li {
+  display: block;
+  margin-top: 7px;
+}
+#language-selection-buttons ul.btn-language li a {
+  display: block;
+  border: none;
+  text-decoration: none;
+  padding-top: 0.1em;
+  padding-bottom: 0.2em;
+  background: #cccccc;
+  margin: 0 auto;
+  font-family: arial, sans-serif;
+  font-size: 12px;
+  text-align: center;
+  color: #333333;
+}
+#language-selection-buttons ul.btn-language li#active a {
+  color: #800000;
+}
+#language-selection-buttons ul.btn-language li a:hover,
+#language-selection-buttons ul.btn-language li#active a:hover {
+  color: #333333;
+  background: #afafaf;
+  border: none;
+}
+#menu-placeholder {
+  float: left;
+  display: inline;
+}
+/********************************************
+ * Menu - default
+ *******************************************/
+#player-navigation-menu.default {
+  margin-top: 5px;
+  margin-left: 15px;
+}
+#player-navigation-menu.default ul {
+  margin-top: 5px;
+}
+#player-navigation-menu.default li a.current-sequence:before {
+  background: url("data.png") no-repeat -389px -409px;
+}
+#player-navigation-menu.default li:not(.menu-root) a.show-expand div.right {
+  background: url("data.png") no-repeat -369px -409px;
+}
+#player-navigation-menu.default li.menu-root:not(.child) a:not(.menu-item-child) {
+  background: url("data.png") no-repeat -490px -20px;
+  height: 30px;
+  width: 36px;
+}
+#player-navigation-menu.default li.menu-root:not(.child) a:hover:not(.menu-item-child) {
+  background: url("data.png") no-repeat -490px -170px;
+  height: 30px;
+  width: 36px;
+}
+#player-navigation-menu.default li.finished > a:before {
+  background: url("data.png") no-repeat -408px -409px;
+}
+.menuDiv li.finished:not(.current) .menuitem-before {
+  background: url("data.png") no-repeat -408px -409px;
+}
+.menuDiv li.current .menuitem-before {
+  background: url("data.png") no-repeat -389px -409px;
+}
+.menuDiv li.menuitem a.hasSubMenu .menuitem-after {
+  background: url("data.png") no-repeat -369px -409px;
+}
+/********************************************
+* Navigation bar Table
+*******************************************/
+.resetTable {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.resetTable tr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.resetTable tr td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+#course-progress-bar-table-cell {
+  width: 100%;
+}
+#player-controls-table-cell {
+  width: auto;
+}
+/********************************************
+* Exit button
+*******************************************/
+a#controls-exit-btn {
+  position: relative;
+  float: left;
+  margin-top: 5px;
+  display: inline-block;
+  background: url("data.png") no-repeat -590px -20px;
+  width: 42px;
+  height: 34px;
+  z-index: 1;
+}
+a#controls-exit-btn.disabled {
+  position: relative;
+  display: inline-block;
+  background: url("data.png") no-repeat -590px -270px;
+  width: 42px;
+  height: 34px;
+  z-index: 1;
+}
+a#controls-exit-btn:hover:not(.disabled) {
+  background: url("data.png") no-repeat -590px -70px;
+}
+/********************************************
+ * Navigation bar
+ *******************************************/
+#navigation-bar {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  left: 0;
+  bottom: 0;
+  vertical-align: middle;
+  z-index: 1000;
+}
+#navigation-bar:not(.notpresent) {
+  background: url("data.png") repeat -0px -480px;
+}
+/********************************************
+ * Progress bar
+ *******************************************/
+#course-progress-bar {
+  position: relative;
+  width: 232px;
+  height: 12px;
+  display: block;
+  margin: 0px auto;
+  margin-top: 0px;
+}
+#course-progress-bar-empty {
+  position: absolute;
+  display: inline-block;
+  height: 12px;
+  width: 232px;
+  vertical-align: middle;
+  background: url("data.png") no-repeat -490px -340px;
+}
+#course-progress-bar-full {
+  position: absolute;
+  display: inline-block;
+  height: 12px;
+  width: 0px;
+  vertical-align: middle;
+  background: url("data.png") -490px -366px;
+}
+/********************************************
+ * Player Controls
+ *******************************************/
+#player-controls {
+  position: relative;
+  float: right;
+  width: 141px;
+  height: 100%;
+  margin-top: 5px;
+}
+a#controls-previous-btn {
+  position: relative;
+  display: inline-block;
+  background: url("data.png") no-repeat -690px -20px;
+  width: 42px;
+  height: 34px;
+}
+a#controls-previous-btn:hover:not(.disabled) {
+  background: url("data.png") no-repeat -690px -70px;
+}
+a#controls-previous-btn.disabled {
+  background: url("data.png") no-repeat -690px -270px;
+  cursor: not-allowed;
+}
+a#controls-play-pause-btn.play-button {
+  position: relative;
+  display: inline-block;
+  background: url("data.png") no-repeat -790px -20px;
+  width: 42px;
+  height: 34px;
+}
+a#controls-play-pause-btn.play-button:hover {
+  background: url("data.png") no-repeat -790px -70px;
+}
+a#controls-play-pause-btn.pause-button {
+  position: relative;
+  display: inline-block;
+  background: url("data.png") no-repeat -890px -20px;
+  width: 42px;
+  height: 34px;
+}
+a#controls-play-pause-btn.pause-button:hover {
+  background: url("data.png") no-repeat -890px -70px;
+}
+a#controls-next-btn {
+  position: relative;
+  display: inline-block;
+  background: url("data.png") no-repeat -990px -20px;
+  width: 42px;
+  height: 34px;
+}
+a#controls-next-btn:hover:not(.disabled) {
+  background: url("data.png") no-repeat -790px -70px;
+}
+a#controls-next-btn.blink {
+  background: url("data.png") no-repeat -990px -120px;
+}
+a#controls-next-btn.disabled {
+  background: url("data.png") no-repeat -990px -270px;
+  cursor: not-allowed;
+}
+/********************************************
+ * Step by step presetnation arrows navigation
+ *******************************************/
+#stepNavigationContainer {
+  position: absolute;
+  width: 86px;
+  height: 40px;
+  /* margin: 0; */
+  margin-left: 0;
+  padding: 0;
+}
+#stepNavigationContainer .step-nav-text {
+  margin-left: 1px;
+  margin-right: 2px;
+  margin-top: 2px;
+  font-size: 1.2em;
+  color: #ffffff;
+}
+#stepNavigationContainer .stepLeft {
+  margin-left: 2px;
+  float: left;
+  width: 12px;
+  height: 1.3em;
+  padding: 0;
+  background: url("data.png") no-repeat -490px -410px;
+  /*border: solid thin;*/
+}
+#stepNavigationContainer .stepLeft.hidden {
+  margin-left: 2px;
+  float: left;
+  width: 12px;
+  height: 1.3em;
+  padding: 0;
+  background: url("data.png") no-repeat -490px -410px;
+  /*border: solid thin;*/
+  visibility: hidden;
+}
+#stepNavigationContainer .stepLeft:hover {
+  background: url("data.png") no-repeat -589px -410px;
+}
+#stepNavigationContainer #stepNavPosition {
+  margin-left: 2px;
+  margin-right: 2px;
+  float: left;
+  width: auto;
+  height: 1.3em;
+}
+#stepNavigationContainer .stepRight {
+  margin-left: 2px;
+  float: left;
+  width: 12px;
+  height: 1.3em;
+  background: url("data.png") no-repeat -530px -410px;
+  /*border: solid thin;*/
+}
+#stepNavigationContainer .stepRight.hidden {
+  margin-left: 2px;
+  float: left;
+  width: 12px;
+  height: 1.3em;
+  background: url("data.png") no-repeat -530px -410px;
+  /*border: solid thin;*/
+  visibility: hidden;
+}
+#stepNavigationContainer .stepRight:hover {
+  background: url("data.png") no-repeat -630px -410px;
+}
+/****************************************
+   * Text to speech panel
+   *****************************************/
+.textToSpeechPanel a#exitPanel {
+  background: url("data.png") no-repeat -510px -430px;
+  width: 13px;
+  height: 13px;
+  margin-top: 3px;
+  margin-right: 3px;
+  float: right;
+}
+.textToSpeechPanel #next {
+  background: url("data.png") no-repeat -530px -430px;
+  width: 13px;
+  height: 13px;
+  margin-top: 4px;
+  margin-right: 3px;
+  float: right;
+}
+.textToSpeechPanel #previous {
+  background: url("data.png") no-repeat -490px -430px;
+  width: 13px;
+  height: 13px;
+  margin-top: 4px;
+  margin-left: 3px;
+  float: left;
+}
+.textToSpeechPanel #previous[disabled] {
+  background: url("data.png") no-repeat -590px -430px;
+}
+.textToSpeechPanel #next[disabled] {
+  background: url("data.png") no-repeat -630px -430px;
+}
+#text-to-speech-control-button {
+  width: 66px;
+  height: 34px;
+  margin: auto 4px;
+}
+/********************************************
+ * ButtonChunkItem style
+ *******************************************/
+.buttonChunkItem {
+  background: url("data.png") no-repeat 0px -20px;
+  width: 106px;
+  height: 26px;
+  border: solid 0px;
+  outline: none;
+}
+.buttonChunkItem:disabled {
+  background: url("data.png") no-repeat 0px -120px;
+}
+.buttonChunkItem:hover:enabled {
+  background: url("data.png") no-repeat 0px -70px;
+}
+/********************************************
+ * CheckBoxItem style
+ *******************************************/
+.check-box-item input {
+  visibility: hidden;
+}
+.check-box-item input + label {
+  background: url("data.png") no-repeat -240px -340px;
+  line-height: 16px;
+  color: #fff;
+  height: 18px;
+  width: 18px;
+  display: inline-block;
+}
+.check-box-item.multiple-chokice-cb input + label {
+  margin-left: -19px;
+  margin-top: 2px;
+}
+.check-box-item.true-false-cb input + label {
+  padding: 15px 0 0 0;
+  margin-top: -20px;
+}
+.check-box-item input:checked + label {
+  background: url("data.png") no-repeat -290px -340px;
+}
+.highlited_correct input + label {
+  background: url("data.png") no-repeat -390px -340px;
+}
+.highlited_correct input:checked + label {
+  background: url("data.png") no-repeat -340px -340px;
+}
+.highlited_wrong input:checked + label {
+  background: url("data.png") no-repeat -365px -340px;
+}

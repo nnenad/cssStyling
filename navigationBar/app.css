@@ -1,0 +1,185 @@
+/* app css stylesheet */
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    line-height: 20px;
+}
+
+span.textChunkItem li {
+    margin-left: 35px;
+    line-height: 16px;
+}
+
+ul, ol {
+    padding: 0;
+    margin: 0 0 10px 25px;
+}
+
+#main-templates-container{
+    height: 0;
+    width: 0;
+    position: absolute;
+}
+
+#main-region {
+    /*border: 1px solid #e1e1e8;*/
+    position: absolute;
+    display: inline-block;
+    background-image: url("");
+    overflow: hidden;
+}
+
+.highlited {
+    border: #000000 solid thick !important;
+}
+
+.pointMarker {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-image: url("img/pointMarker.png");
+}
+
+.areaHighlight {
+    border-style: solid;
+    border-width: 4px;
+}
+
+/* color of correct area for identify area template (same for both answers!)*/
+.answerRight {
+    border-color: #66cc00;
+}
+
+.answerWrong {
+    border-color: #66cc00;
+}
+
+.test-animation.ng-enter,
+.test-animation.ng-leave {
+    -webkit-transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+    -moz-transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+    -o-transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+    transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+}
+
+.debugDivContainer {
+    position: relative;
+    top: 720px;
+    border: #62c462 solid thin;
+}
+
+.paused {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 40px;
+    z-index: 9999;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.85);
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+}
+
+
+
+
+.clickable{
+    cursor: pointer;
+}
+
+.defaultCoursor{
+    cursor: default;
+}
+
+
+/*Course loader amimation gif*/
+#course-loading-widget {
+    z-index: 1000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -64px;
+    margin-left: -64px;
+    width: 128px;
+    height: 128px;
+}
+
+/*Content loader amimation gif*/
+.loading-animation-widget{
+    z-index: 9999;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 50%;
+}
+
+.loading-animation-widget .loadingContent{
+    vertical-align: middle; text-align: center;
+}
+
+
+[ng\:cloak], [ng-cloak], .ng-cloak {
+    display: none;
+}
+
+.no_selection {
+    -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -khtml-user-select: none; /* webkit (konqueror) browsers */
+    -ms-user-select: none; /* IE10+ */
+}
+.ui-draggable.ui-state-disabled {
+    opacity: 1;
+    filter: Alpha(Opacity=100);
+}
+span.ui-draggable, img.ui-draggable {
+    cursor: move;
+}
+
+.textToSpeechPanel {
+    position: absolute;
+    background-color: #eeeeee;
+    x: 50px;
+    y: 50px;
+    width: 280px;
+    height: 190px;
+    border: solid 1px #000000;
+    z-index: 1001;
+}
+.textToSpeechPanel #panelHeader {
+    display: block;
+    width: 100%;
+    height: 20px;
+    background-color: #afafaf;
+}
+
+.textToSpeechPanel p {
+    padding-left: 5px;
+    padding-right: 5px;
+    overflow: auto;
+}
+.textToSpeechPanel #panelFooter {
+    position: absolute;
+    bottom:0px;
+    background-color: #D8D7D7;
+    height: 20px;
+    width:100%;
+}
+.textToSpeechPanel a#previous[disabled], .textToSpeechPanel a#next[disabled] {
+    pointer-events: none;
+}
+.dragdrop_1dropArea, .dragdrop_2dropArea{
+    background-color : #B4B4B4;
+    opacity: 0.9;
+}
+
+.dragdrop_3dropArea, .dragdrop_4dropArea{
+    visibility: hidden;
+}

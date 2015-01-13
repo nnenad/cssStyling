@@ -1,0 +1,14 @@
+/* This style apply only for DEFAULT menu */
+#player-navigation-menu.default {
+  /* On hover menu button, set position of root menu item*/
+
+}
+#player-navigation-menu.default #menu-root-element {
+  margin-bottom: 26px;
+}
+#menu-placeholder {
+  position: relative;
+  float: left;
+  width: 60px;
+  height: 100%;
+}

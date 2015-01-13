@@ -1,0 +1,51 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="app.css">
+	<link rel="stylesheet" type="text/css" href="menu.css">
+	<link rel="stylesheet" type="text/css" href="skin.css">
+</head>
+<body>
+<div id="navigation-bar" navigation-bar="" navigation-bar-model="navigationBarModel">
+    <!-- ngIf: menu.isDefault --><div id="menu-placeholder" menu-default="" ng-if="menu.isDefault" class="ng-scope" disabled="disabled"><ul id="player-navigation-menu" class="default"><li class="menu-root"></li></ul></div><!-- end ngIf: menu.isDefault -->
+    <table class="resetTable">
+        <tbody><tr>
+            <!-- ngIf: course.courseSettings.exit --><td ng-if="course.courseSettings.exit" class="ng-scope">
+                <a href="javascript:void(0)" id="controls-exit-btn" ng-click="clickExit()" ng-class="exitButtonClass" class="" title="Exit" exit-control-button="" navigation-bar-model="navigationBarModel"><div class="buttonBackground">  <div class="buttonGraphic"></div></div></a>
+            </td><!-- end ngIf: course.courseSettings.exit -->
+            <!-- ngIf: showTextToSpeechButton --><td ng-if="showTextToSpeechButton" class="ng-scope">
+                <a href="javascript:void(0)" id="text-to-speech-control-button" class="active buttonOn" ng-click="toggleTextToSpeech()" title="Text to speech" ng-class="buttonActive" text-to-speech-button=""><div class="buttonBackground">  <div class="buttonText"></div></div></a>
+            </td><!-- end ngIf: showTextToSpeechButton -->
+            <td id="course-progress-bar-table-cell">
+                <!-- ngIf: course.courseSettings.progression --><div id="course-progress-bar" ng-if="course.courseSettings.progression" class="ng-scope">
+                    <div id="course-progress-bar-empty"></div>
+                    <div id="course-progress-bar-full" progress-bar-width="" style="width: 0px;"></div>
+                </div><!-- end ngIf: course.courseSettings.progression -->
+            </td>
+
+            <td id="player-controls-table-cell">
+                <div id="player-controls">
+
+                    <!-- ngIf: navigationBarModel.previousButton.visible --><a href="javascript:void(0)" id="controls-previous-btn" ng-click="clickPrevious()" ng-if="navigationBarModel.previousButton.visible" ng-class="previousButtonClass" title="Previous" previous-control-button="" navigation-bar-model="navigationBarModel" class="ng-scope"><div class="buttonBackground">  <div class="buttonGraphic"></div></div></a><!-- end ngIf: navigationBarModel.previousButton.visible -->
+
+                    <!-- ngIf: navigationBarModel.playPauseButton.visible --><a href="javascript:void(0)" id="controls-play-pause-btn" ng-click="clickPlayPause()" ng-class="((stateMachine.state === 'paused')? 'play-button' : 'pause-button')" ng-if="navigationBarModel.playPauseButton.visible" title="Pause" class="ng-scope pause-button">
+                        <div class="buttonBackground">
+                            <div class="buttonGraphic"></div>
+                        </div>
+                    </a><!-- end ngIf: navigationBarModel.playPauseButton.visible -->
+
+                    <!-- ngIf: navigationBarModel.nextButton.visible --><a href="javascript:void(0)" id="controls-next-btn" class="active ng-scope disabled" ng-click="clickNext()" ng-if="navigationBarModel.nextButton.visible" ng-class="nextButtonClass" title="Next" next-control-button="" navigation-bar-model="navigationBarModel"><div class="buttonBackground">  <div class="buttonGraphic"></div></div></a><!-- end ngIf: navigationBarModel.nextButton.visible -->
+
+
+                </div>
+            </td>
+
+        </tr>
+
+    </tbody></table>
+
+
+
+</div>
+
+<body>
+<html>
