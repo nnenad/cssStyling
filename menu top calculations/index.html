@@ -1,0 +1,114 @@
+<html>
+
+<head>
+<style>
+	#before{
+		float:left;
+		display: inline;
+		width: 20px;
+		border:1px solid red;
+	}
+	
+	#title{
+		display:inline;
+		float:left;
+		max-width: 150px;
+		overflow:hidden;
+		height:20px;
+	}
+	
+	#after{
+		float:right;
+		display: inline;
+		width: 20px;
+		border:1px solid red;
+	}
+	
+	#wraper{
+		display:block;
+		height:20px;
+		border:1px solid red;
+	}
+	
+	#wraperSub{
+		display:block;
+		height:20px;
+		border:1px solid red;
+	}
+	
+	
+//First line main items	
+	#menu{
+		list-style: none;	
+		padding:0px;
+	}
+	.menuitem{
+		float:left;	
+		width: 250px;
+			
+	}
+	
+	.submenu{
+	}
+	.submenu2{
+		visibility:hidden;
+		position:relative;
+	}
+	
+
+</style>
+
+<script src="myscript.js"></script>
+<script src="jquery-2.1.3.js"></script>
+
+</head>
+<body>
+
+<div id="menu">
+	<div class="menuitem">
+		<a onclick="alert('pogodio si u div')"id="wraper"><div id="before"> xx </div><div id="title">ovo je tekst koji mora da se razvuce dasdas d adsd dsa  ds</div><div id="after"> yy </div></a>
+		
+			<div class="submenu">
+				
+				<div class="submenuitem">
+					<a onclick="alert('pogodio si u div')" id="wraperSub"><div id="before"> xx </div><div id="title">Submenu - ovo je tekst koji mora da se razvuce dasdas d adsd dsa  ds</div><div id="after"> yy </div></a>
+				</div>
+				
+				<div class="submenuitem">
+					<a onclick="openSubmenu(event)" id="wraperSub"><div id="before"> xx </div><div id="title">Submenu - Druga</div><div id="after"> yy </div></a>
+					
+					<div class="submenu2">
+						<div class="submenuitem">
+							<a onclick="alert('pogodio si u div')"id="wraperSub"><div id="before"> xx </div><div id="title">22Submenu - ovo je tekst koji mora da se razvuce dasdas d adsd dsa  ds</div><div id="after"> yy </div></a>
+						</div>
+						<div class="submenuitem">
+							<a onclick="openSubmenu(event)" id="wraperSub"><div id="before"> xx </div><div id="title">22Submenu - Druga</div><div id="after"> yy </div></a>
+							
+							<div class="submenu2">
+								<div class="submenuitem">
+									<a onclick="alert('pogodio si u div')"id="wraperSub"><div id="before"> xx </div><div id="title">33Submenu - ovo je tekst koji mora da se razvuce dasdas d adsd dsa  ds</div><div id="after"> yy </div></a>
+								</div>
+								<div class="submenuitem">
+									<a onclick="alert('pogodio si u div')"id="wraperSub"><div id="before"> xx </div><div id="title">33Submenu - Druga</div><div id="after"> yy </div></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	<div class="menuitem">
+		<a onclick="alert('pogodio si u div')"id="wraper"><div id="before"> xx </div><div id="title">Druga stavka menu itema, ovo je tekst koji mora da se razvuce dasdas d adsd dsa  ds</div><div id="after"> yy </div></a>
+	</div>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+</body>
+</html>
